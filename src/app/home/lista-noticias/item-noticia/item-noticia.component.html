@@ -1,0 +1,22 @@
+  <template #popTemplate>
+      <div class="row">
+        <div class="col-md-12">
+            <img src="{{noticia.UrlImagemCapa}}" width="100%" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            {{noticia.Resumo()}}
+          </p>
+        </div>
+      </div>
+  </template>
+<b>{{noticia.Data.toDateString()}}</b>
+<div 
+    [popover]="popTemplate"
+    popoverTitle="{{noticia.Titulo}}"
+    triggers="mouseenter:mouseleave">
+    {{noticia.Resumo()}}
+
+</div>

@@ -1,0 +1,104 @@
+<app-home-navbar></app-home-navbar>
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Noticias</div>
+          <div class="panel-body" style="height: 300px; overflow-y: scroll;">
+            <app-lista-noticias [Noticias]="Noticias"></app-lista-noticias>
+          </div>
+        </div>  
+    </div>
+
+      <div class="col-md-8">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Calendario</div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div style="display:inline-block; min-height:290px;">
+                  <datepicker></datepicker>
+                </div>  
+              </div>
+              <div class="col-md-6">
+                <p>Utilize este calendário para verificar a disponibilidade do Sistema Canal da Agência e eventos.</p>
+              </div>
+            </div>
+              
+          </div>
+        </div>  
+      </div>
+
+  </div>
+
+
+  <div class="row">
+
+    <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Clipping</div>
+          <div class="panel-body" style="height: 300px; overflow-y: scroll;">
+             <app-lista-noticias [Noticias]="Noticias"></app-lista-noticias>
+          </div>
+        </div>  
+    </div>
+
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Atalhos</div>
+          <div class="panel-body">
+            <table class="table table-striped">
+              <tr>
+                <td><a href="#"> <button type="button" class="btn btn-outline-primary btn-block"><span class="glyphicon glyphicon glyphicon-search"></span> Consulta Usuário/Boleto</button></a></td>
+              </tr>
+              <tr>
+                <td><a href="#"> <button type="button" class="btn btn-outline-primary btn-block"><span class="glyphicon glyphicon-barcode"></span> Demonstrativo de Débito</button></a></td>
+              </tr>
+              <tr>
+                <td><a href="#"><button type="button" class="btn btn-outline-primary btn-block"><span class="glyphicon glyphicon-barcode"></span> Boletos Inadimplentes</button></a></td>
+              </tr>
+              <tr>
+                <td><a href="#"><button type="button" class="btn btn-outline-primary btn-block"><span class="glyphicon glyphicon-barcode"></span> Boletos Liquidados</button></a></td>
+              </tr>
+              <tr>
+                <td> <a href="#"><button type="button" class="btn btn-outline-primary btn-block">Endereço Usuários</button>  </a></td>
+              </tr>
+              <tr>
+                <td> <a href="#"> <button type="button" class="btn btn-outline-primary btn-block">Alterar Senha</button></a></td>
+              </tr>
+              
+            </table>
+          </div>
+        </div>  
+      </div>
+
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Serviços</div>
+          <div class="panel-body">
+            <table class="table table-striped">
+              <tr>
+                <td><a href="#"> <button type="button" class="btn btn-outline-primary btn-block">Registro de Boleto</button></a></td>
+              </tr>
+              <tr>
+                <td><a href="#"> <button type="button" class="btn btn-outline-primary btn-block">Consultas e Relatórios</button></a></td>
+              </tr>
+              <tr>
+                <td><a href="#"><button type="button" class="btn btn-outline-primary btn-block">Formas de Cálculo</button></a></td>
+              </tr>
+              <tr>
+                <td><a href="#"><button type="button" class="btn btn-outline-primary btn-block">Tabela de Preços</button></a></td>
+              </tr>
+            </table>
+          </div>
+        </div>  
+      </div>
+
+    </div>
+
+</div>
+
+

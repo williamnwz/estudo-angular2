@@ -1,0 +1,36 @@
+<app-home-navbar></app-home-navbar>
+
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <div class="panel panel-primary">
+      <div class="panel-heading">Fórum</div>
+      <div class="panel-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Titulo</th>
+              <th>Respostas</th>
+              <th>Data Abertura</th>
+              <th>Agência/Técnico</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>25 Anos (Inicicio das atividades em Araçatuba 01/11/1991)</td>
+              <td>0</td>
+              <td>31/10/2016</td>
+              <td>DUARTE DE SA COBRANÇA LTDA</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-4">
+  <pagination class="pagination-sm"
+              [boundaryLinks]="true" [rotate]="false" (numPages)="numPages = $event"></pagination>
+  </div>
+</div>
